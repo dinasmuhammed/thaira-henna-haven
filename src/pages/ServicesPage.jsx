@@ -5,22 +5,22 @@ const ServicesPage = () => {
     {
       title: 'Bridal Henna',
       description: 'Intricate and beautiful designs for your special day.',
-      image: '/bridal-henna.jpg'
+      image: 'https://via.placeholder.com/400x300?text=Bridal+Henna'
     },
     {
       title: 'Party Henna',
       description: 'Fun and stylish designs for celebrations and events.',
-      image: '/party-henna.jpg'
+      image: 'https://via.placeholder.com/400x300?text=Party+Henna'
     },
     {
       title: 'Festival Henna',
       description: 'Traditional and contemporary designs for festive occasions.',
-      image: '/festival-henna.jpg'
+      image: 'https://via.placeholder.com/400x300?text=Festival+Henna'
     },
     {
       title: 'Custom Designs',
       description: 'Personalized henna art tailored to your preferences.',
-      image: '/custom-henna.jpg'
+      image: 'https://via.placeholder.com/400x300?text=Custom+Henna'
     }
   ];
 
