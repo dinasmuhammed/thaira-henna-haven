@@ -26,13 +26,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-brown-300"><Facebook className="h-6 w-6" /></a>
-              <a href="#" className="hover:text-brown-300"><Instagram className="h-6 w-6" /></a>
-              <a href="#" className="hover:text-brown-300"><Twitter className="h-6 w-6" /></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-brown-300">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-brown-300">
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-brown-300">
+                <Twitter className="h-6 w-6" />
+              </a>
             </div>
-            <p className="mt-4 text-sm">123 Henna Street, Kannur, Kerala, India</p>
-            <p className="text-sm">Phone: +91 1234567890</p>
-            <p className="text-sm">Email: info@thairaheenas.com</p>
           </div>
         </div>
         <div className="mt-8 border-t border-brown-700 pt-8 text-center text-sm">
