@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import MehndiGallery from '../components/MehndiGallery';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,8 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
+
+        <MehndiGallery />
 
         <div className="mt-16">
           <h2 className="text-3xl font-semibold text-brown-900 mb-8 text-center">Our Services</h2>
