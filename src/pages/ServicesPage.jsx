@@ -3,37 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import { Sparkles } from 'lucide-react';
-
-const services = [
-  {
-    title: 'Hair Styling',
-    description: 'Expert cuts, coloring, and styling services by our professional team.',
-    price: 'Starting from $50',
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df',
-    features: ['Haircuts', 'Coloring', 'Styling', 'Hair Treatments']
-  },
-  {
-    title: 'Makeup Services',
-    description: 'Professional makeup application for any occasion.',
-    price: 'Starting from $75',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881',
-    features: ['Bridal Makeup', 'Party Makeup', 'Natural Look', 'Special Effects']
-  },
-  {
-    title: 'Spa Treatments',
-    description: 'Relaxing and rejuvenating spa experiences.',
-    price: 'Starting from $90',
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035',
-    features: ['Massages', 'Facials', 'Body Wraps', 'Aromatherapy']
-  },
-  {
-    title: 'Nail Care',
-    description: 'Complete nail care services for hands and feet.',
-    price: 'Starting from $30',
-    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b',
-    features: ['Manicure', 'Pedicure', 'Nail Art', 'Gel Polish']
-  }
-];
+import { servicesData } from '@/lib/assets';
 
 const ServicesPage = () => {
   return (
@@ -52,7 +22,7 @@ const ServicesPage = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
+          {servicesData.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

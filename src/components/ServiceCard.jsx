@@ -2,24 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-
-const services = [
-  {
-    title: 'Hair Styling',
-    description: 'Expert cuts, coloring, and styling',
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df'
-  },
-  {
-    title: 'Makeup',
-    description: 'Professional makeup for any occasion',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881'
-  },
-  {
-    title: 'Spa Treatments',
-    description: 'Relaxing and rejuvenating experiences',
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035'
-  }
-];
+import { servicesData } from '@/lib/assets';
 
 const ServiceCard = () => {
   return (
@@ -34,7 +17,7 @@ const ServiceCard = () => {
           Our Services
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {servicesData.slice(0, 3).map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

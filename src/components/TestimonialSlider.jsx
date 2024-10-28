@@ -1,27 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Regular Client",
-    content: "The best salon experience I've ever had. The staff is professional and the results are amazing!",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
-  },
-  {
-    name: "Emily Davis",
-    role: "Bride",
-    content: "They made my wedding day perfect! The attention to detail was exceptional.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
-  },
-  {
-    name: "Michelle Lee",
-    role: "Model",
-    content: "Professional service with stunning results. Highly recommended!",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb"
-  }
-];
+import { testimonialsData } from '@/lib/assets';
 
 const TestimonialSlider = () => {
   return (
@@ -43,7 +23,7 @@ const TestimonialSlider = () => {
           className="w-full max-w-5xl mx-auto"
         >
           <CarouselContent>
-            {testimonials.map((testimonial, index) => (
+            {testimonialsData.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
